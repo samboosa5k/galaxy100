@@ -20,6 +20,9 @@ _Before before flashing QMK:_
 _After flashing QMK:_
 * Fn+L+Esc will reset the board to bootloader mode if you have flashed the default QMK keymap
 
+_Exit bootloader mode:_
+* wb32-dfu-updater_cli --reset
+
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
