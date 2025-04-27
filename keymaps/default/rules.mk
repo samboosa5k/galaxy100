@@ -1,3 +1,2 @@
 ENCODER_MAP_ENABLE = yes
 VIA_ENABLE = yes
-ENABLE_VIA = yes

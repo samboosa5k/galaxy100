@@ -208,7 +208,7 @@
             {"matrix": [0, 15], "x": 0, "y": 186, "flags": 4},
             {"matrix": [0, 16], "x": 0, "y": 198, "flags": 4},
             {"matrix": [0, 17], "x": 0, "y": 211, "flags": 4},
-            {"matrix": [0, 18], "x": 0, "y": 223, "flags": 4},
+            {"matrix": [0, 18], "x": 0, "y": 223, "flags": 4}
         ],
         "max_brightness": 150,
         "val_steps": 30,
