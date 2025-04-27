@@ -44,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_CAPS,  TO(_BL),  KC_NO,    KC_D,     KC_F,     KC_G,     KC_H,     KC_J,     KC_K,     MO(_FBL), KC_SCLN,  KC_QUOT,  RGB_MOD,            KC_PGDN,   KC_P4,     KC_P5,     KC_P6,
         KC_LSFT,  KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,     KC_N,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,  KC_RSFT,  RGB_VAI,                       KC_P1,     KC_P2,     KC_P3,   KC_PENT,
         KC_LCTL,  KC_LALT,  KC_LGUI,                      KC_SPC,                                 KC_RGUI,  _______,  RGB_SPD,  RGB_VAD,            RGB_SPI,              KC_P0,     KC_PDOT ),
-    [_FBL] = LAYOUT( /* Base */ 
+    [_FBL] = LAYOUT( /* Base */
         QK_BOOT,             _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,   _______,  _______, _______,  _______, _______,  
         _______,  _______,   _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,   _______,  _______, _______,  _______, _______,
         _______,  _______,   _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,   _______,  _______, _______,  _______, _______,
