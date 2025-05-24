@@ -29,3 +29,8 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
   -  VIA compatibility added in `keymaps/default/rules.mk`
   -  Rotary encoder programming enabled in `keymaps/default/rules.mk`
   -  Provide correct key combination to enter bootloader mode after flashing QMK firmware
+
+* Updated: 2025-05-25
+* Fixes:
+  -  Added missing RGB Matrix mapping to the `keyboard.json`
+  -  Added missing CAPS and NUM status indicator logic in `galaxy100.c`
