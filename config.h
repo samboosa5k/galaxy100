@@ -17,7 +17,8 @@
 /* Status Indicator Lamp */
 
 #define HS_RGB_INDEX_CAPS                   47
-#define HS_RGB_INDEX_WIN_LOCK               70
+#define HS_RGB_INDEX_NUM                    70
+//#define HS_RGB_INDEX_WIN_LOCK             71
 #define HS_RGB_BLINK_INDEX_VAI              5
 #define HS_RGB_BLINK_INDEX_VAD              6
 #define HS_RGB_BLINK_INDEX_SPI              7

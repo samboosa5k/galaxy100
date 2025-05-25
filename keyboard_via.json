@@ -1,0 +1,338 @@
+{
+  "name": "galaxy 100",
+  "vendorId": "0x342d",
+  "productId": "0xe489",
+  "keycodes": ["qmk_lighting"],
+  "menus": [
+    {
+      "label": "Lighting",
+      "content": [
+        {
+          "label": "Backlight",
+          "content": [
+            {
+              "label": "Brightness",
+              "type": "range",
+              "options": [0, 255],
+              "content": ["id_qmk_rgb_matrix_brightness", 3, 1]
+            },
+            {
+              "label": "Effect",
+              "type": "dropdown",
+              "content": ["id_qmk_rgb_matrix_effect", 3, 2],
+              "options": [
+                ["All Off", 0],
+                ["Alphas Mods", 1],
+                ["Band Pinwheel Sat", 2],
+                ["Band Pinwheel Val", 3],
+                ["Band Sat", 4],
+                ["Band Spiral Sat", 5],
+                ["Band Spiral Val", 6],
+                ["Band Val", 7],
+                ["Breathing", 8],
+                ["Cycle All", 9],
+                ["Cycle Left Right", 10],
+                ["Cycle Out In", 11],
+                ["Cycle Out In Dual", 12],
+                ["Cycle Pinwheel", 13],
+                ["Cycle Spiral", 14],
+                ["Cycle Up Down", 15],
+                ["Digital Rain", 16],
+                ["Dual Beacon", 17],
+                ["Gradient Left Right", 18],
+                ["Gradient Up Down", 19],
+                ["Hue Breathing", 20],
+                ["Hue Pendulum", 21],
+                ["Hue Wave", 22],
+                ["Jellybean Raindrops", 23],
+                ["Multisplash", 24],
+                ["Pixel Flow", 25],
+                ["Pixel Fractal", 26],
+                ["Pixel Rain", 27],
+                ["Rainbow Beacon", 28],
+                ["Rainbow Moving Chevron", 29],
+                ["Rainbow Pinwheels", 30],
+                ["Raindrops", 31],
+                ["Solid Color", 32],
+                ["Solid Multisplash", 33],
+                ["Solid Reactive", 34],
+                ["Solid Reactive Cross", 35],
+                ["Solid Reactive Multicross", 36],
+                ["Solid Reactive Multinexus", 37],
+                ["Solid Reactive Multiwide", 38],
+                ["Solid Reactive Nexus", 39],
+                ["Solid Reactive Simple", 40],
+                ["Solid Reactive Wide", 41],
+                ["Solid Splash", 42],
+                ["Splash", 43],
+                ["Typing Heatmap", 44]
+              ]
+            },
+            {
+              "showIf": "{id_qmk_rgb_matrix_effect} != 0",
+              "label": "Effect Speed",
+              "type": "range",
+              "options": [0, 255],
+              "content": ["id_qmk_rgb_matrix_effect_speed", 3, 3]
+            },
+            {
+              "showIf": "{id_qmk_rgb_matrix_effect} != 0 && {id_qmk_rgb_matrix_effect} != 24 && {id_qmk_rgb_matrix_effect} != 28 && {id_qmk_rgb_matrix_effect} != 29 && {id_qmk_rgb_matrix_effect} != 32",
+              "label": "Color",
+              "type": "color",
+              "content": ["id_qmk_rgb_matrix_color", 3, 4]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "matrix": {"rows": 6, "cols": 19},
+  "customKeycodes": [
+    {"name": "BT DEV1","title": "BT Device 1","shortName": "DEV1"},
+    {"name": "BT DEV2","title": "BT Device 2","shortName": "DEV2"},
+    {"name": "BT DEV3","title": "BT Device 3","shortName": "DEV3"},
+    {"name": "2.4G","title": "2.4G","shortName": "DEV 2.4G"},
+    {"name": "USB","title": "USB","shortName": "DEV USB"}
+  ],
+  "layouts": {
+    "keymap":[
+      [
+        {
+          "y": 0.25,
+          "c": "#777777"
+        },
+        "0,0",
+        {
+          "x": 1,
+          "c": "#cccccc"
+        },
+        "0,2",
+        "0,3",
+        "0,4",
+        "0,5",
+        {
+          "x": 0.5
+        },
+        "0,6",
+        "0,7",
+        "0,8",
+        "0,9",
+        {
+          "x": 0.5
+        },
+        "0,10",
+        "0,11",
+        "0,12",
+        "0,13",
+        {
+          "x": 0.25
+        },
+        "0,14",
+        {
+          "x": 0.25
+        },
+        "0,15",
+        "0,16",
+        "0,17",
+        "0,18\n\n\n\n\n\n\n\n\ne0"
+      ],
+      [
+        {
+          "y": 0.25,
+          "c": "#777777"
+        },
+        "1,0",
+        {
+          "c": "#cccccc"
+        },
+        "1,1",
+        "1,2",
+        "1,3",
+        "1,4",
+        "1,5",
+        "1,6",
+        "1,7",
+        "1,8",
+        "1,9",
+        "1,10",
+        "1,11",
+        "1,12",
+        {
+          "c": "#aaaaaa",
+          "w": 2
+        },
+        "1,13",
+        {
+          "x": 0.25,
+          "c": "#cccccc"
+        },
+        "1,14",
+        {
+          "x": 0.25
+        },
+        "1,15",
+        "1,16",
+        "1,17",
+        "1,18"
+      ],
+      [
+        {
+          "c": "#aaaaaa",
+          "w": 1.5
+        },
+        "2,0",
+        {
+          "c": "#cccccc"
+        },
+        "2,1",
+        "2,2",
+        "2,3",
+        "2,4",
+        "2,5",
+        "2,6",
+        "2,7",
+        "2,8",
+        "2,9",
+        "2,10",
+        "2,11",
+        "2,12",
+        {
+          "w": 1.5
+        },
+        "2,13",
+        {
+          "x": 0.25
+        },
+        "2,14",
+        {
+          "x": 0.25
+        },
+        "2,15",
+        "2,16",
+        "2,17",
+        {
+          "h": 2
+        },
+        "2,18"
+      ],
+      [
+        {
+          "c": "#aaaaaa",
+          "w": 1.75
+        },
+        "3,0",
+        {
+          "c": "#cccccc"
+        },
+        "3,1",
+        "3,2",
+        "3,3",
+        "3,4",
+        "3,5",
+        "3,6",
+        "3,7",
+        "3,8",
+        "3,9",
+        "3,10",
+        "3,11",
+        {
+          "c": "#777777",
+          "w": 2.25
+        },
+        "3,12",
+        {
+          "x": 0.25,
+          "c": "#cccccc"
+        },
+        "3,14",
+        {
+          "x": 0.25
+        },
+        "3,15",
+        "3,16",
+        "3,17"
+      ],
+      [
+        {
+          "c": "#aaaaaa",
+          "w": 2.25
+        },
+        "4,0",
+        {
+          "c": "#cccccc"
+        },
+        "4,1",
+        "4,2",
+        "4,3",
+        "4,4",
+        "4,5",
+        "4,6",
+        "4,7",
+        "4,8",
+        "4,9",
+        "4,10",
+        {
+          "c": "#aaaaaa",
+          "w": 1.75
+        },
+        "4,11",
+        {
+          "c": "#cccccc"
+        },
+        "4,12",
+        {
+          "x": 1.5
+        },
+        "4,15",
+        "4,16",
+        "4,17",
+        {
+          "h": 2
+        },
+        "4,18"
+      ],
+      [
+        {
+          "c": "#aaaaaa",
+          "w": 1.25
+        },
+        "5,0",
+        {
+          "w": 1.25
+        },
+        "5,1",
+        {
+          "w": 1.25
+        },
+        "5,2",
+        {
+          "c": "#cccccc",
+          "w": 6.25
+        },
+        "5,5",
+        {
+          "c": "#aaaaaa",
+          "w": 1.25
+        },
+        "5,9",
+        {
+          "w": 1.25
+        },
+        "5,10",
+        {
+          "x": 0.5,
+          "c": "#cccccc"
+        },
+        "5,11",
+        "5,12",
+        "5,14",
+        {
+          "x": 0.5,
+          "w": 2
+        },
+        "5,16",
+        "5,17"
+      ]
+    ]
+  }
+}

@@ -806,14 +806,18 @@ bool rgb_matrix_indicators_advanced_kb(uint8_t led_min, uint8_t led_max) {
         ee_clr_timer = 0;
     }
 
-    if (host_keyboard_led_state().caps_lock)
+    if (host_keyboard_led_state().caps_lock){
         rgb_matrix_set_color(HS_RGB_INDEX_CAPS, 0x20, 0x20, 0x20);
-    else
-        rgb_matrix_set_color(HS_RGB_INDEX_CAPS, RGB_BLACK);
-    if (!keymap_is_mac_system() && keymap_config.no_gui)
-        rgb_matrix_set_color(HS_RGB_INDEX_WIN_LOCK, 0x20, 0x20, 0x20);
-    else
-        rgb_matrix_set_color(HS_RGB_INDEX_WIN_LOCK, RGB_BLACK);
+    }
+
+    if (host_keyboard_led_state().num_lock){
+        rgb_matrix_set_color(HS_RGB_INDEX_NUM, 0x20, 0x20, 0x20);
+    }
+
+    // if (!keymap_is_mac_system() && keymap_config.no_gui)
+    //     rgb_matrix_set_color(HS_RGB_INDEX_WIN_LOCK, 0x20, 0x20, 0x20);
+    // else
+    //     rgb_matrix_set_color(HS_RGB_INDEX_WIN_LOCK, RGB_BLACK);
 
     rgb_matrix_hs_indicator();
 
